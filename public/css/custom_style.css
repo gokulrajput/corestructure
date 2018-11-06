@@ -1,0 +1,41 @@
+.create_header {
+    background: #fff;
+    margin-right: 60px;
+    padding: 20px 75px 20px;
+    text-align: center;
+}
+#wizard-t-0, #wizard-t-1, #wizard-t-2, #wizard-t-3, #wizard-t-4, #wizard-t-5, #wizard-t-6 {
+      font-size: 14px;
+      font-family: "Poppins-SemiBold";
+      color: #333;
+      top: -38px;
+      padding: 10px;
+      text-align: center;
+      vertical-align: center;
+}
+.content h4 {
+  display: none;
+}
+ .steps ul li a {
+    display: inline-block;
+    width: 100%;
+    height: 40px;
+    background: #e6e6e6;
+    border-radius: 15.5px;
+}
+.steps ul li a:hover {
+    text-decoration: none;
+    color:blue !important;
+}
+.form-row.form-group {
+    border-bottom: 2px solid #e6e6e6;
+    padding-bottom: 6px;
+}
+.checkbox-circle {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+a:focus {
+    /* outline: 5px auto -webkit-focus-ring-color; */
+    outline-offset: -2px;
+}
