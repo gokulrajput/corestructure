@@ -35,5 +35,17 @@
        
     </div>
 </form>
+
+<div class="sidebar">
+<ul>
+<li>1 Basic info</li>
+<li>1 Basic info</li>
+<li>1 Basic info</li>
+<li>1 Basic info</li>
+<li>1 Basic info</li>
+
+</ul>
+</div>
+
 </div>
 @endsection
