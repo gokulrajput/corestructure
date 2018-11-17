@@ -66,7 +66,11 @@
                 </div>
             </div>
         </nav>
+        <div class="wrapper">
         @yield('content')
+        @include('layouts.sidebar')
+        </div>
+
         </div>
         <script src="{{ asset('js/app.js') }}"></script>
         <script src="/js/jquery-3.3.1.min.js"></script>

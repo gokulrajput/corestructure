@@ -10,6 +10,7 @@
         <link href="<?php echo e(asset('css/app.css')); ?>" rel="stylesheet">
         <link rel="stylesheet" href="/fonts/material-design-iconic-font/css/material-design-iconic-font.css">
         <link rel="stylesheet" href="/css/style.css">
+        <link rel="stylesheet" href="/css/custom_style.css">
     </head>
     <body>
      <div id="app">
@@ -25,8 +26,7 @@
                     </button>
                     <!-- Branding Image -->
                     <a class="navbar-brand" href="<?php echo e(url('/')); ?>">
-                        <?php echo e(config('app.name', 'Laravel')); ?>
-
+                        Core Structure                        
                     </a>
                 </div>
                 <div class="collapse navbar-collapse" id="app-navbar-collapse">
@@ -67,7 +67,11 @@
                 </div>
             </div>
         </nav>
+        <div class="wrapper">
         <?php echo $__env->yieldContent('content'); ?>
+        <?php echo $__env->make('layouts.sidebar', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+        </div>
+
         </div>
         <script src="<?php echo e(asset('js/app.js')); ?>"></script>
         <script src="/js/jquery-3.3.1.min.js"></script>

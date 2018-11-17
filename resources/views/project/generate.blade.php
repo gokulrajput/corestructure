@@ -2,7 +2,7 @@
 
 @section('content')
 
-<div class="wrapper">
+
 <form action="">
     <div id='create_header' class="create_header">
         <h1>Administration Section Creator</h1>
@@ -31,21 +31,9 @@
       
         
         <h4>Step 6</h4>
-        @include('project.dblayout')                    
+        @include('project.dblayout')               
        
     </div>
 </form>
 
-<div class="sidebar">
-<ul>
-<li>1 Basic info</li>
-<li>1 Basic info</li>
-<li>1 Basic info</li>
-<li>1 Basic info</li>
-<li>1 Basic info</li>
-
-</ul>
-</div>
-
-</div>
 @endsection
