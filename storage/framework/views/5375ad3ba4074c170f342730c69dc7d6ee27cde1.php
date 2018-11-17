@@ -1,4 +1,4 @@
-<!doctype html>
+<!doctype html> 
 <html lang="<?php echo e(app()->getLocale()); ?>">
     <head>
         <meta charset="utf-8">
