@@ -11,7 +11,7 @@
     <title><?php echo e(config('app.name', 'Laravel')); ?></title>
 
     <!-- Styles -->
-    <link href="<?php echo e(asset('css/app.css')); ?>" rel="stylesheet">
+    <link href="<?php echo e(asset('public/css/app.css')); ?>" rel="stylesheet">
 </head>
 <body>
     <div id="app">
@@ -53,13 +53,13 @@
                                 </a>
 
                                 <ul class="dropdown-menu">
+                                    <li> <a href="<?php echo e(route('myaccount')); ?>">My Account</a></li>
                                     <li>
                                         <a href="<?php echo e(route('logout')); ?>"
                                             onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
                                             Logout
                                         </a>
-
                                         <form id="logout-form" action="<?php echo e(route('logout')); ?>" method="POST" style="display: none;">
                                             <?php echo e(csrf_field()); ?>
 

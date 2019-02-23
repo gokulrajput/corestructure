@@ -2,15 +2,15 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>FormWizard_v5</title>
+        <title>Core Structure</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="author" content="colorlib.com">
         <meta name="csrf-token" content="{{ csrf_token() }}">
         <title>Core Structure</title>
-        <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-        <link rel="stylesheet" href="/fonts/material-design-iconic-font/css/material-design-iconic-font.css">
-        <link rel="stylesheet" href="/css/style.css">
-        <link rel="stylesheet" href="/css/custom_style.css">
+        <link href="{{ asset('/public/css/app.css') }}" rel="stylesheet">
+        <link rel="stylesheet" href="{{ asset('public/fonts/material-design-iconic-font/css/material-design-iconic-font.css') }}">
+        <link rel="stylesheet" href="{{ asset('public/css/style.css') }}">
+        <link rel="stylesheet" href="{{ asset('public/css/custom_style.css') }}">
     </head>
     <body>
      <div id="app">
@@ -34,7 +34,6 @@
                     <ul class="nav navbar-nav">
                         &nbsp;
                     </ul>
-
                     <!-- Right Side Of Navbar -->
                     <ul class="nav navbar-nav navbar-right">
                         <!-- Authentication Links -->
@@ -46,15 +45,14 @@
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true" v-pre>
                                     {{ Auth::user()->name }} <span class="caret"></span>
                                 </a>
-
                                 <ul class="dropdown-menu">
+                                    <li> <a href="{{ route('myaccount') }}">My Account</a></li>
                                     <li>
                                         <a href="{{ route('logout') }}"
                                             onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
                                             Logout
                                         </a>
-
                                         <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                                             {{ csrf_field() }}
                                         </form>
@@ -72,10 +70,10 @@
         </div>
 
         </div>
-        <script src="{{ asset('js/app.js') }}"></script>
-        <script src="/js/jquery-3.3.1.min.js"></script>
-        <script src="/js/jquery.steps.js"></script>
-        <script src="/js/main.js"></script>
+        <script src="{{ asset('public/js/app.js') }}"></script>
+        <script src="{{ asset('public/js/jquery-3.3.1.min.js') }}"></script>
+        <script src="{{ asset('public/js/jquery.steps.js') }}"></script>
+        <script src="{{ asset('public/js/main.js') }}"></script>
 
 </body>
 </html>

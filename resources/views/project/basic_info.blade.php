@@ -51,36 +51,4 @@
     <div class="form-holder"><label for="">&nbsp;</label>Prefix for the database tables.</div>
 </div> 
 
-<!--<div class="form-row">
-    <label for="">
-        Company Name
-    </label>
-    <input type="text" class="form-control">
-</div>  
-<div class="form-row">
-    <label for="">
-        Country *
-    </label>
-    <div class="form-holder">
-        <select name="" id="" class="form-control">
-            <option value="viet nam" class="option">Viet Nam</option>
-            <option value="united states" class="option">United States</option>
-            <option value="united kingdom" class="option">United Kingdom</option>
-        </select>
-        <i class="zmdi zmdi-caret-down"></i>
-    </div>
-</div>  
-<div class="form-row">
-    <label for="">
-        Address *
-    </label>
-    <input type="text" class="form-control" placeholder="Street address" style="margin-bottom: 20px">
-    <input type="text" class="form-control" placeholder="Apartment, suite, unit etc. (optional)">
-</div>  
-<div class="form-row">
-    <label for="">
-        Town / City *
-    </label>
-    <input type="text" class="form-control">
-</div>-->
 </section>

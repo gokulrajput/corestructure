@@ -25,4 +25,13 @@ class HomeController extends Controller
     {
         return view('home');
     }
+    /**
+     * Show the Customer's Account Section.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function myaccount()
+    {
+        return view('users.myaccount');
+    }
 }
